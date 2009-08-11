@@ -71,6 +71,11 @@
 (global-set-key "\C-xt" 'twitter-get-friends-timeline)
 (add-hook 'twitter-status-edit-mode-hook 'longlines-mode)
 
+; see http://github.com/defunkt/textmate.el/tree/master for details
+(add-to-list 'load-path "~/Library/Preferences/Aquamacs Emacs/aquamacs-emacs-starter-kit/vendor/textmate.el")
+(require 'textmate)
+(textmate-mode)
+
 ;;;;; end Vendor libs
 
 ;;;;; Aquamacs Emacs Starter Kit specific customizations
